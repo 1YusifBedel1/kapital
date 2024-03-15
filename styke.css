@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a i{
+    color: red;
+}
+.first img{
+width: 200px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: 50px;
+    height: 80px;
+}
+.search{
+color: red;
+border: 1px solid red;
+}
+.second img{
+width: 100px;
+border-radius: 20px;
+}
+.second{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: #3333;
+}
+.gizli{
+margin-right: 50px;
+display: none;
+}
+.gizli img{
+    width: 30px;
+    border-radius: 20px;
+}
+.fa-bars{
+    font-size: 28px;
+    color:  red;
+}
+@media only screen and (max-width: 980px) {
+    .gizli {
+      display: flex;
+      gap: 50px;
+    }
+    .first ul{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 980px) {
+    .second {
+      display: none;
+      
+    }
+  }
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imagediv img{
+width: 250px;
+border-radius: 15px 15px 0px 0px;
+
+}
+.worddiv{
+    width: 250px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px;
+}
+@media only screen and (max-width: 980px) {
+    .container {
+      flex-direction: column;
+      gap: 30px;
+      
+    }
+  }
